@@ -35,12 +35,6 @@ main > .container {
   }
 }
 
-
-.footer,
-.push {
-  height: 50px;
-}
-
 .title_color {
   border-left: 10px solid #09c;
   background-color: #333333
