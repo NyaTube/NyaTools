@@ -1,6 +1,8 @@
 
 html, body {
   height: 100%;
+  margin: 0;
+  padding: 0;
   background-color: #222222;
   background-image:
     radial-gradient(#000 35%, transparent 36%),
@@ -9,6 +11,20 @@ html, body {
   background-position: 0 0, 2px 2px;
   color: #ddd;
 }
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+ 
+footer {
+  margin-top: auto;
+  padding: 30px 0;
+  background: #89c7de;
+  color: #fff;
+  text-align: center;
+}
+
 main > .container {
   padding: 60px 15px 0;
 }
@@ -60,3 +76,8 @@ textarea {
     width: 50%;
   }
 }
+
+* {
+  box-sizing: border-box;
+}
+ 
