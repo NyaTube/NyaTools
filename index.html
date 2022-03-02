@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ja" class="h-100">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NyaTools</title>
+  <link rel="icon" href="meow.ico">
+  <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/default.css" rel="stylesheet">
+  <script src="js/default.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body class="d-flex flex-column h-100">
+  <header>
+    <nav class="container navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">NyaTools</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">有給取得可能日数計算</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="flex-shrink-0 container">
+    <div class="container">
+      <h3 class="title_color  p-1">稼働時間等から月の有給取得可能日数を計算するツール</h3>
+      <div class="row mb-3 g-3 p-1 input_area">
+        <div class="col-auto">
+          <span>稼働時間(定時)</span>
+          <select name="work_time" class="form-control Column_color">
+            <option value="7">7:00</option>
+            <option value="7.5">7:30</option>
+            <option value="8">8:00</option>
+          </select>
+        </div>
+        <div class="col-auto ">
+          <span>稼働時間下限</span>
+          <select name="work_time_min" class="form-control Column_color">
+            <option value="130">130</option>
+            <option value="140">140</option>
+            <option value="150">150</option>
+          </select>
+        </div>
+        <div class="col-auto">
+          <span>稼働日数</span>
+          <input type="text" name="work_date" class="form-control Column_color" onchange="">
+        </div>
+      </div>
+      <div class="mb-3 text-center ">
+        <a href="#" onclick="calculation();" class="btn btn-danger rounded-pill">
+          計算する
+        </a>
+      </div>
+      <div class="mb-3 text-center">
+        <span>結果</span><br>
+        <textarea class="mb-1 p-1 Column_color" readonly></textarea>
+      </div>
+    </div>
+    </div>
+  </main>
+  <footer class="footer container mt-auto py-3 bg-dark">
+    <div>
+      <span>©NyaTubeWorkSpace</span>
+    </div>
+  </footer>
+</body>
+
+</html>
