@@ -1,6 +1,5 @@
 
 html, body {
-  min-height: 100vh;
   margin: 0;
   padding: 0;
   background-color: #222222;
@@ -13,12 +12,17 @@ html, body {
 }
 
 body {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
+
+main {
+  flex: 1;
+}
+
  
 footer {
-  margin-top: auto;
   padding: 30px 0;
   background: #89c7de;
   color: #fff;
