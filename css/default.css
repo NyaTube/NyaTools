@@ -20,12 +20,9 @@ body {
 main {
   flex: 1;
 }
-
  
 footer {
-  padding: 30px 0;
-  background: #89c7de;
-  color: #fff;
+  color: #ddd;
   text-align: center;
 }
 
