@@ -20,5 +20,6 @@ function calculation() {
     
     //var conversion_work_time = parseInt(work_time);
 
-    $('textarea').text("月の合計稼働時間は" + calculation_result + "時間です。有給取得可能日数は" +  holidays + "日です。");
+    $('#output_total_time').text("月間合計稼働時間は" + calculation_result + "時間");
+    $('#output_holiday').text("有給取得可能日数は" +  holidays + "日");
 }
