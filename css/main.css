@@ -116,7 +116,6 @@ input[type="number"] {
     display: inline-block;
     text-align: center;
     background: transparent;
-    /* border-radius: 25px; */
     border: solid 2px #2b61fa;
     outline: none;
     /*アニメーションの指定*/
@@ -129,7 +128,6 @@ input[type="number"] {
     display: block;
     padding: 10px 30px;
     background: #fff;
-    /* border-radius: 25px; */
     color: #2b61fa;
     transition: all 0.3s ease;
 }
