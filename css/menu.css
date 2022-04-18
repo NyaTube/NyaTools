@@ -49,6 +49,7 @@ nav {
 .menu.open {
     -webkit-transform: translateX(0%);
     transform: translateX(0%);
+    height: 100vh;
     /*中身を表示（右へスライド）*/
 }
 
