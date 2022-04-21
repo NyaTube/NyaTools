@@ -1,10 +1,10 @@
 $(function(){
-    $('.js-modal-open').on('click',function(){
-        $('.js-modal').fadeIn();
+    $('.js_modal_open').on('click',function(){
+        $('.js_modal').fadeIn();
         return false;
     });
-    $('.js-modal-close').on('click',function(){
-        $('.js-modal').fadeOut();
+    $('.js_modal_close').on('click',function(){
+        $('.js_modal').fadeOut();
         return false;
     });
 });
