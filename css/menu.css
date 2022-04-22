@@ -121,6 +121,7 @@ nav {
 
     .menu {
         width: 100%;
+        height: auto;
         background-color: transparent;
         margin-top: 0;
         -webkit-transform: translateX(0);
